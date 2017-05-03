@@ -10,7 +10,7 @@ namespace WoWItemDb.Scraper
     {
         static void Main(string[] args)
         {
-            Scraper s = new Scraper("c:\\temp\\wowitemdump.json","", "en_US", 3000, 3050);
+            Scraper s = new Scraper("c:\\temp\\wowitemdump.json", "xq8vpc767927jktq28fgvcchwtr96f7m", "en_US", 1, 133948);
             s.OnResponseRecieved += S_OnResponseRecieved;
             s.BeginScraping().Wait();
 

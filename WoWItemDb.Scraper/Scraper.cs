@@ -70,7 +70,7 @@ namespace WoWItemDb.Scraper
             _complete = true;
         }
 
-        public void ProcessQueue()
+        private void ProcessQueue()
         {
             using (var fs = File.OpenWrite(_outputPath))
             using (StreamWriter writer = new StreamWriter(fs))
