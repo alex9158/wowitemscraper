@@ -72,8 +72,7 @@ namespace WoWItemDb.Scraper
 
         public void ProcessQueue()
         {
-            var file = "";
-            using (var fs = File.OpenWrite(file))
+            using (var fs = File.OpenWrite(_outputPath))
             using (StreamWriter writer = new StreamWriter(fs))
             {
                 while (ResponseQueue.Any() || !_complete)
